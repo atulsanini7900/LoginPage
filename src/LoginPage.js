@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -9,12 +10,16 @@ import {
   MDBInput
 }
 from 'mdb-react-ui-kit';
+import MyNav from './MyNav';
 
 function LoginPage() {
   return (
+    <>
+    <div><MyNav /></div>
+    
     <MDBContainer  className="my-5 gradient-form">
       <MDBRow>
-        <MDBCol md='4' className="mb-5"> {/* Adjusted col value */}
+        <MDBCol md='6' className="mb-5"> {/* Adjusted col value */}
           <div className="d-flex flex-column ms-5">
             <div className="text-center">
               <h4 className="mt-1 mb-5 pb-1">Please Login Here</h4>
@@ -34,7 +39,7 @@ function LoginPage() {
             </div>
           </div>
         </MDBCol>
-        <MDBCol md='6' className="mb-8"> {/* Adjusted col value */}
+        <MDBCol md='6' className="mb-5"> {/* Adjusted col value */}
           <div className="d-flex flex-column justify-content-center gradient-custom-2 h-100 mb-4">
             <div className="text-white px-3 py-4 p-md-5 mx-md-4">
               <h4 className="mb-4">We are more than just a company</h4>
@@ -47,6 +52,7 @@ function LoginPage() {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
+    </>
   );
 }
 

@@ -2,6 +2,8 @@
 
 import './App.css';
 import LoginPage from './LoginPage';
+// import BrandPage from './BrandPage';
+
 
 function App() {
       
@@ -11,6 +13,8 @@ function App() {
     <>
     <LoginPage />
     
+
+     {/* <BrandPage /> */}
     </>
      
   
